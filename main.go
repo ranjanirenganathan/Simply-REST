@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/zebresel-com/mongodm"
 	"example-app/controllers"
 	"example-app/models"
 	"fmt"
