@@ -1,25 +1,29 @@
 package controllers
 
+
 import (
+
 	"github.com/gin-gonic/gin"
+	"github.com/zebresel-com/mongodm"
+	"github.com/gin-gonic/gin/json"
 	"log"
-	"test-app/models"
+	"Simply-REST/models"
 	"gopkg.in/mgo.v2/bson"
 	"encoding/json"
 	"time"
 )
 
-const DBName = "DBNAME"
-const CollectionUsers = "COLLECTIONNAME"
+
 
 type UserController struct{
-	db *models.Connection
-}
+	//session *mgo.Session
+	db *mongodm.Connection
+	}
 
-var (
-	Database *models.Connection
-)
-func NewUserController (s *models.Connection) *UserController{
+var ( Database *mongodm.Connection)
+
+
+func NewUserController (s *mongodm.Connection) *UserController{
 	return &UserController{s}
 }
 
