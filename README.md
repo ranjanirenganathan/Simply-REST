@@ -2,7 +2,7 @@
 
 ### How to create a simple REST API using Gin Gonic framework and mongodm###
 
-### Dockerize###
+### Dockerize ###
 * Summary of set up
 * Configuration
 * Dependencies
